@@ -113,9 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        document.getElementById("btn").style.display = "flex";
- document.getElementById("successPopup").style.display = "flex";
-
+        document.getElementById("successPopup").style.display = "flex";
 
 
          });
@@ -123,5 +121,3 @@ document.addEventListener("DOMContentLoaded", function () {
 function closeSuccess() {
     document.getElementById("successPopup").style.display = "none";
 }
-
-
