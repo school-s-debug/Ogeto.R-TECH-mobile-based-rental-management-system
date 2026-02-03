@@ -12,6 +12,7 @@ const error=document.getElementById("error")
 
 if(email==="" || id==="'"){
     alert("all filleds must be filled!")
+    return;
 }
 
  if (!email.includes("@") || !email.includes(".")) {
@@ -31,7 +32,7 @@ if(email==="" || id==="'"){
          });
 });
 
-function close() {
+function closep() {
     document.getElementById("popup2").style.display = "none";
     document.getElementById("response").innerText = "";
 }
@@ -84,3 +85,4 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Password updated successfully");
     });
 });
+
