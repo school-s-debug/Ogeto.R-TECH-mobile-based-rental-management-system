@@ -86,3 +86,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("commentform");
+    const error = document.getElementById("error");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const comments = document.getElementById("comments").value.trim();
+        const email = document.getElementById("email").value.trim();
+         const number = document.getElementById("number").value.trim();
+ if (comments=== "") {
+            alert("You have not filled any comment!");
+            return;
+        }
+
+ if ((emailfilled && number) || (!emailfilled && !numberfilled)){
+     e.preventDefault();
+            alert("please fill in either your email or password!");
+            return;
+        }
+        alert("Thanks for your feedback.we will respond within 24hrs via your email or phone number")
+// if email=== "") {
+            //alert("Either your email or phone number is required! it will be used to give you response");
+            //return;
+        //}
