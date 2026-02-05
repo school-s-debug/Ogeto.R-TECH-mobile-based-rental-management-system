@@ -112,3 +112,4 @@ document.addEventListener("DOMContentLoaded", function () {
             //alert("Either your email or phone number is required! it will be used to give you response");
             //return;
         //}
+
