@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         if (!password.includes("@")) {
-            error.textContent = "Password must be at least 6 characters.";
+            error.textContent = "Password must include special character "@".";
             error.style.color = "red";
             return;
 }
@@ -121,3 +121,4 @@ document.addEventListener("DOMContentLoaded", function () {
 function closeSuccess() {
     document.getElementById("successPopup").style.display = "none";
 }
+
