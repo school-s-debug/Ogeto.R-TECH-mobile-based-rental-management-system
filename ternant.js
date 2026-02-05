@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const form = document.getElementById("tenantForm");
+    const form = document.getElementById("tenantform");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -81,7 +81,7 @@ function closeSuccess() {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const form = document.getElementById("loginForm");
+    const form = document.getElementById("loginform");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -121,4 +121,5 @@ document.addEventListener("DOMContentLoaded", function () {
 function closeSuccess() {
     document.getElementById("successPopup").style.display = "none";
 }
+
 
